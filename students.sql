@@ -8,14 +8,14 @@ CREATE TABLE students (
   company_drives INTEGER NOT NULL,
   mentors text NOT NULL,
   students_activated_courses text NOT NULL,
-  courses text NOT NULL
+  courses INTEGER NOT NULL
 );
 -- insert some values
-INSERT INTO students VALUES ('sanjay', '40', '100','javascript','15','3','Raghav','1','fullstackdevelopment');
-INSERT INTO students VALUES ('saran', '37', '96','html','13','2','Raghav','1','fullstackdevelopment');
-INSERT INTO students VALUES ('suman', '28', '100','css','12','1','lavish','1','fullstackdevelopment');
-INSERT INTO students VALUES ('sunder', '29', '95','react','11','5','lavish','1','fullstackdevelopment');
-INSERT INTO students VALUES ('suresh', '34', '91','node.js','14','7','Raghav','1','fullstackdevelopment');
+INSERT INTO students VALUES ('sanjay', '40', '100','javascript','15','3','Raghav','5','120');
+INSERT INTO students VALUES ('saran', '37', '96','html','13','2','Raghav','7','120');
+INSERT INTO students VALUES ('suman', '28', '100','css','12','1','lavish','12','120');
+INSERT INTO students VALUES ('sunder', '29', '95','react','11','5','lavish','11','120');
+INSERT INTO students VALUES ('suresh', '34', '91','node.js','14','7','Raghav','9','120');
 -- fetch some values
 SELECT sum(codekata) FROM students; 
 SELECT users, company_drives FROM students; 
